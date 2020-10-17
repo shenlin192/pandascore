@@ -1,0 +1,27 @@
+.title-icon {
+  background: #f4f7fa;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  justify-content: flex-end;
+}
+
+.title-icon p {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.title-icon img {
+  border-radius: 0px 3px 3px 0px;
+  background-color: #dfe1ec;
+}
+
+.title-icon.title-icon-reverse {
+  flex-direction: row-reverse;
+}
+
+.title-icon.title-icon-reverse img {
+  border-radius: 3px 0px 0px 3px;
+}

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Row, Col, Layout } from 'antd';
+
 import { webSocketService } from './services/webSocketservics';
 import { TeamHeader } from './components/team-header';
 import { ScoreBoard } from './components/score-board';
@@ -21,25 +23,27 @@ function App() {
 
   return (
     <div className="App">
-      {
-        lolFrame && 
-        <>
-          <TeamHeader 
+      <Row justify="center">
+        <Col span={20}>     
+          {
+        lolFrame &&        
+          <><TeamHeader
             blueName={lolFrame.blue.name}
             redName={lolFrame.red.name}
-          />
-          <ScoreBoard 
+          /><ScoreBoard
             timestamp={lolFrame.current_timestamp}
             blueTeamScore={lolFrame.blue}
             redTeamScore={lolFrame.red}
           />
-          <GoldGraph
-            timestamp={lolFrame.current_timestamp}
-            blueGold={lolFrame.blue.gold}
-            redGold={lolFrame.red.gold}
-          />
-        </>
+            <GoldGraph
+              timestamp={lolFrame.current_timestamp}
+              blueGold={lolFrame.blue.gold}
+              redGold={lolFrame.red.gold}
+            />
+          </>       
       }
+        </Col>
+      </Row>
     </div>
   );
 }

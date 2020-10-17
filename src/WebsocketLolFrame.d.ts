@@ -67,5 +67,3 @@ export interface LolTeamStats {
     sup: LolTeamPlayer
   }
 }
-
-export type OmitPlayers = Omit<LolTeamStats, "players">;
