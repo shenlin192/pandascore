@@ -13,7 +13,7 @@
       }
     },
     "rules": {
-      "no-console": 1,
+      "no-console": 0,
       "object-curly-spacing": ["warn", "always"],
       "@typescript-eslint/no-explicit-any": [
         "error",
@@ -24,7 +24,7 @@
       "max-len": [
         "warn",
         {
-          "code": 80,
+          "code": 100,
           "ignoreStrings": true,
           "ignoreTemplateLiterals": true,
           "ignoreComments": true
