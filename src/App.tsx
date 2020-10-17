@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Row, Col, Layout } from 'antd';
+import { Row, Col } from 'antd';
 
 import { webSocketService } from './services/webSocketservics';
-import { TeamHeader } from './components/team-header';
+import TeamHeader from './components/team-header';
 import { ScoreBoard } from './components/score-board';
 import { GoldGraph } from './components/gold-graph';
 import { LolFrame } from './WebsocketLolFrame';
@@ -27,14 +27,16 @@ function App() {
         <Col span={20}>     
           {
         lolFrame &&        
-          <><TeamHeader
-            blueName={lolFrame.blue.name}
-            redName={lolFrame.red.name}
-          /><ScoreBoard
-            timestamp={lolFrame.current_timestamp}
-            blueTeamScore={lolFrame.blue}
-            redTeamScore={lolFrame.red}
-          />
+          <>
+            <TeamHeader
+              blueName={lolFrame.blue.name}
+              redName={lolFrame.red.name}
+            />
+            <ScoreBoard
+              timestamp={lolFrame.current_timestamp}
+              blueTeamScore={lolFrame.blue}
+              redTeamScore={lolFrame.red}
+            />
             <GoldGraph
               timestamp={lolFrame.current_timestamp}
               blueGold={lolFrame.blue.gold}

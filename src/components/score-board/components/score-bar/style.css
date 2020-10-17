@@ -1,0 +1,14 @@
+.score-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 41px;
+}
+
+.score-bar.score-bar-reverse {
+  flex-direction: row-reverse;
+}
+
+.score-bar .item-label {
+  margin: 8px;
+}

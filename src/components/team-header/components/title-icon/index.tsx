@@ -4,12 +4,12 @@ import './style.css';
 export interface TitleIconProps {
   title: string,
   icon: string,
-  ltr?: boolean,
+  reverse?: boolean,
 }
 
 export const TitleIcon: React.FC<TitleIconProps> = (props) => {
   return (
-    <div className={`title-icon ${!props.ltr ? 'title-icon-reverse' : ''}`}>
+    <div className={`title-icon ${props.reverse ? 'title-icon-reverse' : ''}`}>
       <p>{props.title}</p>
       <img src={props.icon} alt="icon" />    
     </div>
@@ -17,5 +17,5 @@ export const TitleIcon: React.FC<TitleIconProps> = (props) => {
 };
 
 TitleIcon.defaultProps = {
-  ltr: true,
+  reverse: false,
 };
