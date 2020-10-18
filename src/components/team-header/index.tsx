@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Layout } from 'antd';
+import { Row, Col } from 'antd';
 import { TitleIcon } from './components/title-icon';
 import teamLogo1 from './images/Team_logo_1.png';
 import teamLogo2 from './images/Team_logo_2.png';

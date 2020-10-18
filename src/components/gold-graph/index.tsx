@@ -38,7 +38,10 @@ export const GoldGraph: React.FC<GoldGraphProps> = (props) => {
 
       // if there're too many data points, make a sampling in every N points
       return prevState.length < MAX_DATA_POINT ? [...prevState, ...newData] :
-        [...prevState.filter((value, index) => (index % SAMPLING_INTERVAL === 0) || ((index - 1) % SAMPLING_INTERVAL === 0)), ...newData];
+        [...prevState.filter((value, index) => 
+          (index % SAMPLING_INTERVAL === 0) || ((index - 1) % SAMPLING_INTERVAL === 0),
+        ), 
+        ...newData];
     });
   }, [props]);
 
