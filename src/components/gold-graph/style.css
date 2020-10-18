@@ -1,0 +1,9 @@
+.gold-graph p {
+  font-weight: 500;
+  text-align: left;
+}
+
+.gold-graph .bizcharts {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}

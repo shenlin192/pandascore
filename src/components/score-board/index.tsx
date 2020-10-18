@@ -59,7 +59,7 @@ export const ScoreBoard: React.FC<ScoreBoardProps> = (props) => {
         </Col>
         <Col flex={6}> 
           <div className="time-block">
-            {new Date(props.timestamp * 1000).toISOString().substr(11, 5)}
+            {new Date(props.timestamp * 1000).toISOString().substr(14, 5)}
           </div> 
         </Col>
         <Col flex={21}>
