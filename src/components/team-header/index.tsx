@@ -13,9 +13,9 @@ export interface TeamHeaderProps {
 export const TeamHeader: React.FC<TeamHeaderProps> = (props) => {
   return (
     <Row align="middle" className="team-header">
-      <Col flex={11}><TitleIcon title={props.redName} icon={teamLogo1} /></Col>
-      <Col flex={2}>vs</Col>
-      <Col flex={11}><TitleIcon title={props.blueName} icon={teamLogo2} reverse /></Col>
+      <Col xs={{ span: 24 }} md={{ span: 11 }}><TitleIcon title={props.redName} icon={teamLogo1} /></Col>
+      <Col xs={{ span: 24 }} md={{ span: 2 }}>vs</Col>
+      <Col xs={{ span: 24 }} md={{ span: 11 }}><TitleIcon title={props.blueName} icon={teamLogo2} reverse /></Col>
     </Row>
   );
 };

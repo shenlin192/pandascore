@@ -24,26 +24,26 @@ function App() {
   return (
     <div className="App">
       <Row justify="center">
-        <Col span={20}>     
+        <Col xs={{ span: 22 }} md={{ span: 18 }}>     
           {
-        lolFrame &&        
-          <>
-            <TeamHeader
-              blueName={lolFrame.blue.name}
-              redName={lolFrame.red.name}
-            />
-            <ScoreBoard
-              timestamp={lolFrame.current_timestamp}
-              blueTeamScore={lolFrame.blue}
-              redTeamScore={lolFrame.red}
-            />
-            <GoldGraph
-              timestamp={lolFrame.current_timestamp}
-              blueGold={lolFrame.blue.gold}
-              redGold={lolFrame.red.gold}
-            />
-          </>       
-      }
+            lolFrame &&        
+              <>
+                <TeamHeader
+                  blueName={lolFrame.blue.name}
+                  redName={lolFrame.red.name}
+                />
+                <ScoreBoard
+                  timestamp={lolFrame.current_timestamp}
+                  blueTeamScore={lolFrame.blue}
+                  redTeamScore={lolFrame.red}
+                />
+                <GoldGraph
+                  timestamp={lolFrame.current_timestamp}
+                  blueGold={lolFrame.blue.gold}
+                  redGold={lolFrame.red.gold}
+                />
+              </>       
+          }
         </Col>
       </Row>
     </div>

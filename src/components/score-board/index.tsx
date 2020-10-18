@@ -41,15 +41,15 @@ export const ScoreBoard: React.FC<ScoreBoardProps> = (props) => {
   return (
     <div className="score-board">
       <Row justify="center" align="middle">
-        <Col flex={10}>
+        <Col xs={{ span: 24 }} md={{ span: 10 }}>
           <ScoreBar items={getItems(resources, props.blueTeamScore)} iconColor={blueTeamColor} backgroundColor='#F4F7FA' />
         </Col>
-        <Col flex={4}> 
+        <Col xs={{ span: 8 }} md={{ span: 4 }}> 
           <div className="kill-block">
             {props.blueTeamScore.kills} <Kills /> {props.redTeamScore.kills}
           </div> 
         </Col>
-        <Col flex={10}>
+        <Col xs={{ span: 24 }} md={{ span: 10 }}>
           <ScoreBar items={getItems(resources, props.redTeamScore)} iconColor={redTeamColor} backgroundColor='#F4F7FA' reverse />
         </Col>
       </Row>
