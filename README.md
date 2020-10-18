@@ -1,6 +1,9 @@
 <h1 align="center">PANDASCORE</h1>
 
-<h5 align="center">A REAL TIME ESPORT DATA MONITORING APPLICATION</h5>
+<h5 align="center">A REAL TIME LOL DATA MONITORING APPLICATION</h5>
+<p align="center">
+<img src="https://github.com/shenlin192/pandascore/blob/main/doc/demo.png?raw=true" alt="demo" style="max-width:100%">
+</p>
 
 ## Overview
 
