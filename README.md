@@ -61,7 +61,7 @@ To guaranty code quality, `eslint` and `prettier` are chosen.
 The application's file structure follows the philosophy described in
 [this article](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1).
 
-To summarise, in general, each component has everything it needs to work on its own, such as its styles, images, translations, etc. You can see a feature like an independent piece of code you will use in your app (a bit like node modules).
+To summarise, in general, each component has everything it needs to work on its own, such as its styles, images, translations. You can see a feature like an independent piece of code you will use in your app (a bit like node modules).
 
 The file structure is like:
 
