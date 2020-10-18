@@ -12,13 +12,14 @@ function App() {
   const [ lolFrame, seLolFrame ] = useState<LolFrame | null>(null);
 
   useEffect(() => {
-    webSocketService('ws://localhost:4000', 1000)
+    const subscription = webSocketService('ws://localhost:4000', 1000)
       .subscribe(
         data => {
           seLolFrame(data as LolFrame);
         },
         err => console.error(err),
       );
+    return subscription.unsubscribe;
   }, []);
 
   return (
