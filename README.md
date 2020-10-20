@@ -38,7 +38,7 @@ The server-side application can be found in [this repo](https://github.com/Epimo
 There are many ways to extend or improve this project for production.
 I am going to explain the two most interesting ones and give a list of the rest of them.
 
-### Uni testing
+### Unit testing
 
 For the reason of lack of time, there is no unit test in this repo. However, to ensure the robustness of the application, especially in production, unit testing is very important. For example, testing the retry logic (error flow) in the WebSocket connection service with `marble-diagram` would be funny and critical.
 
